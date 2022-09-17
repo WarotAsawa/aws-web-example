@@ -3,9 +3,15 @@
 * Based on: Bootstrap v4.1.3 (https://getbootstrap.com)
 * Copyright 2014-2018 Pingendo (https://pingendo.com)
 */
-@import url("/font/AmazonEmberDisplay_Bd.ttf");
-@import url("/font/AmazonEmberDisplay_Rg.ttf");
-
+@font-face {
+  font-family: AmazonEmber;
+  src: url("./font/AmazonEmberDisplay_Rg.ttf");
+}
+@font-face {
+  font-family: AmazonEmber;
+  src: url("./font/AmazonEmberDisplay_Bd.ttf");
+  font-weight: bold;
+}
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -39,8 +45,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", AmazonEmber;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, AmazonEmber; }
 
 *,
 *::before,
@@ -63,7 +69,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Amazon Ember Display";
+  font-family: AmazonEmber;
   font-size: 0.85rem;
   font-weight: 200;
   line-height: 1.8;
@@ -308,7 +314,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.75rem;
-  font-family: "Amazon Ember";
+  font-family: AmazonEmber;
   font-weight: 500;
   line-height: 1.2;
   color: inherit; }
@@ -3874,7 +3880,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Amazon Ember";
+  font-family: AmazonEmber;
   font-style: normal;
   font-weight: 200;
   line-height: 1.8;
@@ -3959,7 +3965,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Amazon Ember";
+  font-family: AmazonEmber;
   font-style: normal;
   font-weight: 200;
   line-height: 1.8;

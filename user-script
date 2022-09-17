@@ -5,5 +5,5 @@ yum install -y git
 systemctl start httpd.service
 systemctl enable httpd.service
 git clone https://github.com/WarotAsawa/aws-web-example.git
-cd ./aws-web-example/* /var/www/html/
+cp -a ./aws-web-example/* /var/www/html/
 systemctl restart httpd.service
